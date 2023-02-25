@@ -15,4 +15,7 @@ def hello_world():
     allenteries = adminCol.find()
     return json_util.dumps(allenteries) """
     return "Hello there! I have some changes"
-    
+
+@application.route("/hello-world2")
+def hello_world2():
+    return "Hello world 2 there! I have been created by now"
