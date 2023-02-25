@@ -1,12 +1,12 @@
 from flask import Flask, jsonify, render_template, request
 import bson.json_util as json_util
-# import databaseconnection
+import databaseconnection
 import testingImport
 import pymongo
 
 application = Flask(__name__)
 
-client = pymongo.MongoClient("mongodb+srv://mongoadmin:tHca1yxBGYrplCtj@pai-mongo-cluster.rwmz5rj.mongodb.net/?retryWrites=true&w=majority")
+client = databaseconnection.connectDb()
 
 
 @application.route("/")
