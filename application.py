@@ -8,4 +8,4 @@ def hello_world():
     
 @application.route("/hello-world2")
 def hello_world2():
-    return testingImport.thisistesting()    
+    return "Hello2 there!"
