@@ -5,7 +5,7 @@ import testingImport
 
 application = Flask(__name__)
 
-# client = databaseconnection.connectDb()
+client = databaseconnection.connectDb()
 
 
 @application.route("/")
