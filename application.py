@@ -1,5 +1,5 @@
 from flask import Flask
-# import testingImport
+import testingImport
 application = Flask(__name__)
 
 @application.route("/")
