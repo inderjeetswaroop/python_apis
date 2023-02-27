@@ -7,7 +7,7 @@ import ssl
 
 application = Flask(__name__)
 
-# client = pymongo.MongoClient("mongodb+srv://mongoadmin:tHca1yxBGYrplCtj@pai-mongo-cluster.rwmz5rj.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://mongoadmin:tHca1yxBGYrplCtj@pai-mongo-cluster.rwmz5rj.mongodb.net/?retryWrites=true&w=majority")
 
 
 @application.route("/")
