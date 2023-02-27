@@ -13,8 +13,8 @@ client = pymongo.MongoClient("mongodb+srv://mongoadmin:tHca1yxBGYrplCtj@pai-mong
 @application.route("/")
 def hello_world():
     userdb = client["pinak"]
-    """adminCol = userdb["users"]
-    allenteries = adminCol.find()
+    adminCol = userdb["users"]
+    """allenteries = adminCol.find()
     return json_util.dumps(allenteries) """
     return "Hello there! I have some changes"
 
