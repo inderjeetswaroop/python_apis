@@ -14,11 +14,9 @@ client = pymongo.MongoClient("mongodb+srv://mongoadmin:tHca1yxBGYrplCtj@pai-mong
 def hello_world():
     userdb = client["pinak"]
     adminCol = userdb["users"]
-    """allenteries = adminCol.find()
-    return json_util.dumps(allenteries) """
-    return "Hello there! I have some changes"
-
+    allenteries = adminCol.find()
+    return json_util.dumps(allenteries)
+ 
 @application.route("/hello-world2")
 def hello_world2():
     return testingImport.thisistesting()
-
